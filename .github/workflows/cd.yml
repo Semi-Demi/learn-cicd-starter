@@ -6,6 +6,10 @@ on:
 
 jobs:
   deploy:
+  # Add "id-token" with the intended permissions.
+    permissions:
+      contents: 'read'
+      id-token: 'write'
     name: Deploy
     runs-on: ubuntu-latest
 
